@@ -59,4 +59,4 @@ function displayQuery() {
     request.send();
 }
 
-
+console.log('this is our test');
