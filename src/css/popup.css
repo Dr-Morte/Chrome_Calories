@@ -1,7 +1,7 @@
 body {
     width: 400px;
     padding: 1em;
-    background: linear-gradient(to bottom, #b0413e 0%, #ff9966 74%);
+    background: linear-gradient(to bottom, #b0413e 0%, #ff9966 114%);
     background-image: "../img/Background.jpg"
   }
   
@@ -14,9 +14,9 @@ body {
   }
 .title{
   display: block;
-  width: 75%;
+  width: 90%;
   margin: auto;
-  background:#FFFFC7;
+  background: linear-gradient(to bottom, #ffffc7 41%, #ff9966 140%);
   text-align: center;
   border-radius: 25px;
   border-color: #548687;
@@ -32,7 +32,7 @@ body {
   display: block;
   width: 75%;
   margin: auto;
-  background:#FFFFC7;
+  background: linear-gradient(to bottom, #ffffc7 41%, #ff9966 140%);
   text-align: center;
   border-radius: 25px;
   border-width: 3px;
