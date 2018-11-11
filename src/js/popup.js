@@ -38,7 +38,7 @@ function dispQuery() {
 
 function displayQuery() {
     var request = new XMLHttpRequest(); //div request-output
-    request.open('GET', 'https://api.edamam.com/api/food-database/parser?ingr='+queryString+'&app_id=1111f66d&app_key=11111dd962aa7f5edaef3461a748bd2f');
+    request.open('GET', 'https://api.edamam.com/api/food-database/parser?ingr='+queryString+'&app_id=4dadc171&app_key=11cf6b2a089c9c60d314fe8a2fc9cef1');
     request.onload = function() {
         try {
             var data = JSON.parse(request.responseText);
