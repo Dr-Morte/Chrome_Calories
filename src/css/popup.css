@@ -1,8 +1,8 @@
 body {
-    width: 400px;
-    padding: 1em;
+     width: 400px;
+    padding: 1em; 
     background: linear-gradient(to bottom, #b0413e 0%, #ff9966 114%);
-    background-image: "../img/Background.jpg"
+    /* background-image: url("../img/Background.jpg") */
   }
   
 
@@ -19,6 +19,8 @@ body {
   background: linear-gradient(to bottom, #ffffc7 41%, #ff9966 140%);
   text-align: center;
   border-radius: 25px;
+  border-width: 1px;
+  border-style: solid;
   border-color: #548687;
 }
 
@@ -35,7 +37,8 @@ body {
   background: linear-gradient(to bottom, #ffffc7 41%, #ff9966 140%);
   text-align: center;
   border-radius: 25px;
-  border-width: 3px;
+  border-width: 1px;
+  /* border-style: solid; */
   border-color: #548687;
   height: 50px;
 }
