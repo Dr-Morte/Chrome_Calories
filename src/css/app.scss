@@ -3,5 +3,7 @@ $mdc-theme-secondary: #bc2c1a;
 $mdc-theme-on-primary: #7fb7be;
 $mdc-theme-on-secondary: #d3f3ee;
 .main{
-    background-color: green;
+    width: 400px;
+     padding: 1em; 
+    background: linear-gradient(to bottom, #dacc3e 0%, #bc2c1a 114%) 
 }
