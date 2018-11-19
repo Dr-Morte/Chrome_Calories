@@ -22,7 +22,8 @@ var options = {
   entry: {
     popup: path.join(__dirname, "src", "js", "popup.js"),
     options: path.join(__dirname, "src", "js", "options.js"),
-    background: path.join(__dirname, "src", "js", "background.js")
+    background: path.join(__dirname, "src", "js", "background.js"),
+    Style: path.join(__dirname, "src", "css",'app.scss')
   },
   output: {
     path: path.join(__dirname, "build"),
@@ -44,6 +45,20 @@ var options = {
         test: /\.html$/,
         loader: "html-loader",
         exclude: /node_modules/
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'popup.css',
+            },
+          },
+          { loader: 'extract-loader' },
+          { loader: 'css-loader' },
+          { loader: 'sass-loader' },
+        ]
       }
     ]
   },
@@ -83,6 +98,8 @@ var options = {
       filename: "background.html",
       chunks: ["background"]
     }),
+    
+    
     new WriteFilePlugin()
   ]
 };
