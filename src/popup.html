@@ -7,41 +7,30 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" type="text/css" media="screen" href ="popup.css" />
   </head>
-  <body class="main">
+  <body class="mdc-typography main">
     
     <img src="img/icon-128.png" class="icon">
     
     
-    <div class="title mdc-card">
-    <h1 >Search for a food!</h1>
+    <div class="mdc-elevation<10> title">
+    <h1 class=mdc-typography--headline3>Search for a food!</h1>
     </div>
-    <div class="input mdc-card">
-        <div class="query mdc-text-field" id="query">
-            <input type="text"
-                   id="my-text-field" 
-                   class="mdc-text-field__input"
-                   autocomplete="off"
-                   placeholder="Type Your food here!">
-                   <button type="submit" class="mdc-button">
-                      Send!
-                        <i class="material-icons mdc-button__icon" aria-hidden="true">send</i>
-                        
-                      </button>
-            
-            <div class="mdc-line-ripple"></div>
-            
 
-          </div>
-      <div class="query mdc-text-field" id="query">
+
+    
+    <div class="mdc-card input">
+        
+      <div class="mdc-text-field query" id="query">
           
         <form class="query-form mdc-text-field--textarea" id="query-form" action="#">
             <input class="query-input mdc-text-field__input" type="text" id="query-input" placeholder="Type your food here!" autocomplete="off">
-            <button type="submit" class="mdc-button">
-              Send!
-                <i class="material-icons mdc-button__icon" aria-hidden="true">send</i>
-                
-              </button>
+            
         </form>
+        <button type="submit" class="mdc-button">
+            Send!
+              <i class="material-icons mdc-button__icon" aria-hidden="true">send</i>
+              
+            </button>
       </div>
       
       <button id="output-button">Click to see output!</button>
