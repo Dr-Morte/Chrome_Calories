@@ -23,6 +23,9 @@
     "write-file-webpack-plugin": "3.4.2"
   },
   "dependencies": {
+    "@material/button": "^0.41.0",
+    "@material/elevation": "^0.41.0",
+    "@material/textfield": "^0.41.0",
     "@material/theme": "^0.41.0",
     "material-components-web": "^0.41.1",
     "sass": "^1.15.1"

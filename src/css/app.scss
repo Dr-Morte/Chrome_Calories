@@ -1,9 +1,49 @@
-$mdc-theme-primary: #dacc3e;
-$mdc-theme-secondary: #bc2c1a;
-$mdc-theme-on-primary: #7fb7be;
-$mdc-theme-on-secondary: #d3f3ee;
+
+$mdc-theme-primary: #fff;
+$mdc-theme-secondary: #ffcb47;
+$mdc-theme-on-primary: #420909;
+$mdc-theme-on-secondary: #A52C2C;
+$mdc-theme-background: radial-gradient(circle farthest-corner at 50% 100%, $mdc-theme-primary , $mdc-theme-secondary);
+@import "@material/button/mdc-button";
+@import "@material/textfield/mdc-text-field";
+@import "material-components-web/material-components-web";
+
 .main{
-    width: 400px;
-     padding: 1em; 
-    background: linear-gradient(to bottom, #dacc3e 0%, #bc2c1a 114%) 
+    width: 300px;
+    text-align: center;
+    padding: 1em; 
+    background: radial-gradient(circle farthest-corner at 50% 100%, $mdc-theme-primary , $mdc-theme-secondary) 
 }
+.icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3px;
+    width: 25%;
+}
+.query{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title{
+    display: block;
+    margin-bottom: 5px;
+    padding: 5px 5px;
+    height: 25px;
+    border-bottom: 3px solid $mdc-theme-on-secondary;
+    color: $mdc-theme-on-primary;
+    text-align: center;
+}
+.input{
+    display: block;
+    padding: 10px;
+    border-radius: 25px;
+    background: $mdc-theme-on-secondary;
+}
+h1{
+    margin: 0px;   
+}
+
+

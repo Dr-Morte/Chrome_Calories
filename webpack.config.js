@@ -1,5 +1,6 @@
 var webpack = require("webpack"),
     path = require("path"),
+    glob = require('glob');
     fileSystem = require("fs"),
     env = require("./utils/env"),
     CleanWebpackPlugin = require("clean-webpack-plugin"),
@@ -57,7 +58,13 @@ var options = {
           },
           { loader: 'extract-loader' },
           { loader: 'css-loader' },
-          { loader: 'sass-loader' },
+          { loader: 'sass-loader',
+          options: {
+            includePaths: ['node_modules', 'node_modules/@material/*']
+              .map((d) => path.join(__dirname, d))
+              .map((g) => glob.sync(g))
+              .reduce((a, c) => a.concat(c), [])
+          } },
         ]
       }
     ]

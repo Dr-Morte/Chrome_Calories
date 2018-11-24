@@ -1,23 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+   
   <head>
     <meta charset="UTF-8">
     <title></title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" type="text/css" media="screen" href ="popup.css" />
   </head>
   <body class="main">
+    
     <img src="img/icon-128.png" class="icon">
-    <div class="title">
+    
+    
+    <div class="title mdc-card">
     <h1 >Search for a food!</h1>
     </div>
-    <div class="query" id="query">
-      <form class="query-form" id="query-form" action="#">
-          <input class="query-input" type="text" id="query-input" placeholder="Type your food here!" autocomplete="off">
-          <button type="submit" class="query-button">Send!</button>
-      </form>
-    </div>
-    <br>
-    <button id="output-button">Click to see output!</button>
+    <div class="input mdc-card">
+        <div class="query mdc-text-field" id="query">
+            <input type="text"
+                   id="my-text-field" 
+                   class="mdc-text-field__input"
+                   autocomplete="off"
+                   placeholder="Type Your food here!">
+                   <button type="submit" class="mdc-button">
+                      Send!
+                        <i class="material-icons mdc-button__icon" aria-hidden="true">send</i>
+                        
+                      </button>
+            
+            <div class="mdc-line-ripple"></div>
+            
+
+          </div>
+      <div class="query mdc-text-field" id="query">
+          
+        <form class="query-form mdc-text-field--textarea" id="query-form" action="#">
+            <input class="query-input mdc-text-field__input" type="text" id="query-input" placeholder="Type your food here!" autocomplete="off">
+            <button type="submit" class="mdc-button">
+              Send!
+                <i class="material-icons mdc-button__icon" aria-hidden="true">send</i>
+                
+              </button>
+        </form>
+      </div>
+      
+      <button id="output-button">Click to see output!</button>
+  </div>
     <div class="output" id="output">
       <p id="output-paragraph">The server says...</p>
       <div id="container">
